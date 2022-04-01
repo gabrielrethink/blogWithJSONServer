@@ -14,8 +14,8 @@ const renderPosts = async () => {
   <p>
     <small>${post.likes} Likes</small>
   </p>
-  <p>${post.body.slice(0, 180)}...</p>
-  <a href="/details.html">Read More</a>
+  <p>${post.body.length > 180 ? post.body.slice(0, 180) + "..." : post.body}</p>
+  <a href="/details.html?id=${post.id}">Read More</a>
 </div>`;
   });
 

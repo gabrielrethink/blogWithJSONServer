@@ -69,8 +69,7 @@ form {
   position: relative;
   margin-bottom: 50px;
 }
-
-form button {
+form > button {
   padding: 10px 20px;
   border-radius: 20px;
   border: 2px solid #36cca2;
@@ -79,4 +78,22 @@ form button {
   display: block;
   position: absolute;
   right: 0;
+}
+
+.blog-details {
+  padding: 20px;
+  border-radius: 15px;
+  background: white;
+}
+.blog-details > button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 2px solid #36cca2;
+  background-color: white;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.blog-details > p {
+  margin: 20px;
 }
