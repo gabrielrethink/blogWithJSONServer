@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@400;500;700&family=Roboto:wght@500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #eee;
+  font-family: "Roboto";
+  color: #444;
+  max-width: 960px;
+  margin: 100px auto;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav > a {
+  color: white;
+  text-decoration: none;
+  background-color: #36cca2;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+input,
+textarea {
+  display: block;
+  margin: 16px 0;
+  padding: 6px 10px;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-family: "Roboto";
+}
+textarea {
+  min-height: 200px;
+}
+
+.post {
+  padding: 16px;
+  background: white;
+  border-radius: 10px;
+  margin: 10px auto;
+  max-width: 750px;
+}
+.post > h2 {
+  margin: 0;
+}
+.post > p {
+  margin: 10px;
+}
+.post > a {
+  color: #36cca2;
+}
+
+.create-blog {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #d4e5ed;
+}
+
+form {
+  max-width: 750px;
+  margin: auto;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+form > button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 2px solid #36cca2;
+  background-color: white;
+  font-size: 14px;
+  display: block;
+  position: absolute;
+  right: 0;
+}
+
+.blog-details {
+  padding: 10px;
+  border-radius: 15px;
+  background-color: white;
+  padding-bottom: 50px;
+  margin-right: 20px;
+  position: relative;
+}
+
+.blog-details > button{
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 2px solid #36cca2;
+  background-color: white;
+  font-size: 14px;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+.blog-details > p{
+  margin: 20px;
+  text-align: justify;
+}
+
+.blog-details > h1{
+  text-align: center;
+}
