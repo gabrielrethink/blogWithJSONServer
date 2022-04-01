@@ -12,8 +12,8 @@ const renderPosts = async () => {
         `<div class = "post">
         <h2>${element.title}</h2>
         <p><small>${element.likes} Likes</small></p>
-        <p>${element.body.slice(0, 180)}... </p>
-        <a href="/details.html">Read More</a>
+        <p>${element.body.length > 180 ? element.body.slice(0, 180) + "..." : element.body}</p>
+        <a href="/details.html?id=${element.id}">Read More</a>
         </div>`
     });
     blogs_div.innerHTML = template;
