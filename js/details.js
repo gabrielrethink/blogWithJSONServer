@@ -1,6 +1,7 @@
 const id = new URLSearchParams(window.location.search).get("id");
 const blogTitle_h1 = document.querySelector("h1");
 const blogBody_p = document.querySelector("p");
+const back_button = document.querySelector("button");
 
 
 const renderPosts= async() => {
