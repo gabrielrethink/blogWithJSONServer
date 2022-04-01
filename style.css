@@ -22,7 +22,7 @@ nav {
 nav > a {
   color: white;
   text-decoration: none;
-  background-color: #36cca2;
+  background-color: #f942d7;
   padding: 10px;
   border-radius: 10px;
 }
@@ -54,13 +54,13 @@ textarea {
   margin: 10px;
 }
 .post > a {
-  color: #36cca2;
+  color: #f942d7;
 }
 
 .create-blog {
   margin-top: 20px;
   padding: 20px;
-  background-color: #d4e5ed;
+  background-color: #e89ae4;
 }
 
 form {
