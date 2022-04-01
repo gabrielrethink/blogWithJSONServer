@@ -14,5 +14,5 @@ const renderPosts = async () => {
 //     window.location.replace("/");
 // }
 
-back_button.addEventListener('click',()=>window.location.replace("/"););
+back_button.addEventListener('click',()=>window.location.replace("/"));
 window.addEventListener("DOMContentLoaded", () => renderPosts());
