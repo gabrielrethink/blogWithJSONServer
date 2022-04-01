@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,500&family=Roboto:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: white;
+    font-family: "Roboto" ;
+    max-width: 960px;
+    margin: 100px auto;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav > a{
+    color: white;
+    text-decoration: none;
+    background-color: #ecc3ec;
+    padding: 10px;
+    border-radius:  10px;
+}
+
+form {
+    max-width: 500px;
+}
+
+input,
+textarea {
+    display: block;
+    margin: 16px 0;
+    padding: 6px 10px;
+    width:  100%;
+    border: 1px solid #ddd;
+    font-family: "Roboto";
+}
+
+textarea{
+    min-height: 200px;
+}
+
+.post{
+    max-width: 750px;
+    padding: 16px;
+    margin: 20px auto;
+    background: #ecc3ec;    
+    border-radius: 10px;
+}
+
+.post > h2 {
+    margin: 0;
+}
+
+.post > p {
+    margin: 10px;
+}
+
+.post > a {
+    color: white;
+}
+
+.create-blog {
+    border: 2px solid #ecc3ec;
+    background-color: #ecc3ec;
+}
+
+form {
+    margin: auto;
+}
+
+form > button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border:  2px solid white;
+    font-size: 14px;
+    font-weight: bolder;
+    word-spacing: 0.5px;
+    background-color: white;
+}
