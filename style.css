@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -19,7 +19,7 @@ nav {
     justify-content: space-between;
 }
 
-nav > a{
+nav>a {
     color: white;
     text-decoration: none;
     background-color: #36cca2;
@@ -46,22 +46,22 @@ textarea {
 }
 
 .post {
-    padding:  16px;
+    padding: 16px;
     margin: 10px auto;
     background: white;
     border-radius: 10px;
     max-width: 600px;
 }
 
-.post > h2 {
+.post>h2 {
     margin: 0;
 }
 
-.post > p {
+.post>p {
     margin-top: 10px;
 }
 
-.post > a {
+.post>a {
     color: #36cca2;
 }
 
@@ -93,12 +93,12 @@ form>button {
 
 .blog-details {
     padding: 20px;
-    border-radius:  15px;
+    border-radius: 15px;
     background: white;
 
 }
 
-.blog-details>button{
+.blog-details>button {
     padding: 10px 20px;
     border-radius: 20px;
     border: 2px solid #36cca2;
@@ -106,6 +106,89 @@ form>button {
     font-size: 14px;
     margin-top: 20px;
 }
-.blog-details>p{
+
+.blog-details>p {
     margin: 20px;
+}
+
+.likes {
+    border: none;
+    font-size: 16px;
+    background-color: #36cca2;
+    color: white;
+    padding: 5px;
+    border-radius: 6px;
+    margin-right: 50px;
+    cursor: pointer;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    /* align-content: center; */
+}
+
+.likes>small {
+    padding-left: 3px;
+    font-size: 16px;
+}
+
+.blogTitle {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    margin: 0 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn > button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: white;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.back {
+    border: 2px solid #36cca2;
+}
+
+.delete {
+    border: 2px solid red;
+}
+.blogHeader {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.blogComments {
+    margin: 25px auto;
+    max-width: 600px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+.author {
+    display: flex;
+    align-items: center;
+}
+
+.commentLikes {
+    font-size: 14px;
+    display: flex;
+    height: 24px;
+    padding:  10px;
+    background-color: #36cca2;
+    color: white;
+    border-radius: 12px;
+    border: none;
+    text-align: center;
+    align-items: center;
+}
+
+.comment {
+    text-align: justify;
+    margin: 10px 40px;
 }
