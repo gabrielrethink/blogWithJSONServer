@@ -15,6 +15,7 @@ body {
 }
 
 nav {
+  margin: 10px 100px;
   display: flex;
   justify-content: space-between;
 }
@@ -93,7 +94,6 @@ form > button {
 .blog-details > button{
   padding: 10px 20px;
   border-radius: 20px;
-  border: 2px solid #36cca2;
   background-color: white;
   font-size: 14px;
   margin-top: 20px;
@@ -107,4 +107,49 @@ form > button {
 
 .blog-details > h1{
   text-align: center;
+}
+
+.delete{
+  border: 2px solid red;
+}
+
+.back{
+  border: 2px solid #36cca2;
+}
+
+.comment{
+  background-color: white;
+  margin: 30px;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+.comment-header{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 50px;
+}
+
+.author{
+  display: flex;
+}
+
+.author > img{
+  margin-right: 10px;
+  height: 30px;
+  width: 30px;
+}
+
+.likes{
+  height: 30px;
+  padding: 0px 10px;
+  border-radius: 15px;
+  background-color: white;
+  border: 2px solid #36cca2;
+}
+
+.comment-body{
+  margin: 0px 150px;
+  margin-top: 25px;
+  text-align: justify;
 }
