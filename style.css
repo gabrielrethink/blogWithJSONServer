@@ -101,3 +101,22 @@ form > button {
 .blog-details > p {
     margin: 20px;
 }
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 150px;
+}
+
+.btn > button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 2px solid #36cca2;
+    background-color: white;
+    font-size: 14px;
+    margin-top: 20px;    
+}
+
+#delete {
+    color: red;
+}
