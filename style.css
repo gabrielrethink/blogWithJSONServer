@@ -108,3 +108,22 @@ form > button {
     word-spacing: 0.5px;
 }
 
+.btn > button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border:  2px solid white;
+    font-size: 14px;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.btn{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 30px ;
+}
+
+#delete {
+    color: red;
+
+}
