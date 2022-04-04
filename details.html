@@ -6,15 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <i class="bi bi-heart-fill"></i>
 </head>
 <body>
     <div class="blog-details">
-        <h1></h1>
-        <p></p>
-        <button>Voltar</button>
-        <div>
-            <script src="/js/details.js"></script>
+        <div class="blogTitle">
+            <h1></h1>
+            <button  class = "likes" id="likesButton">
+                <small  id="likes"></small>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="heart"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                </svg>
+            </button>
+        </div>
+        <p id="blogBody"></p>
+        <!-- botoes -->
+        <div class="btn">
+            <button id="back" class="back">Voltar</button>
+            <button id="delete" class="delete">Delete</button>
+            
+        </div>
+        <!-- botoes -->
+    </div>
+    <div id="comments">
+
+        <div class="blogComments">
+            <div class="commentbody">
+                
+                <div class="blogHeader">
+                    <!-- author, authorAvatar -->
+                    <div class="author">
+                        <img src="/icons/paper.png">
+                        <div>
+                            <p>author:</p>
+                            <h2>Gabriel Gomes</h2>
+                        </div>
+                    </div>
+                    <!-- likes -->
+                    <button class="commentLikes"> 
+                        <small>
+                        </small>
+                    </button>
+                </div>
+            </div>
+            <!-- body -->
+            <p id="bodyComment" class="comment">
+            </p>
         </div>
     </div>
-</body>
-</html>
+    </div>
+        
+    <script src="/js/details.js"></script>
+    </body>
+    </html>

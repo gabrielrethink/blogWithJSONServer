@@ -18,6 +18,7 @@ body{
 
 .createNewBlog{
     margin: 10px 100px;
+
 }
 
 nav{
@@ -49,21 +50,21 @@ textarea{
     margin: 16px 0;
     padding: 6px 10px;
     width: 100%;
-    border: solid;
-    border-color: #98c1d9;
-    background-color: #3d5a80;
+    border: none;
+    /* border-color: #98c1d9; */
+    background: #98c1d9;
     font-family: "Roboto";
     border-radius: 10px;
     max-width: 730px;
-    color: #e0fbfc;
+    color: #293241;
 }
 
 form > input::placeholder{
-    color: #e0fbfc;
+    color: #293241;
 }
 
 form > textarea::placeholder{
-    color: #e0fbfc;
+    color: #293241;
 }
 
 textarea{
@@ -98,7 +99,7 @@ textarea{
 .create-blog{
     margin-top: 20px;
     padding: 16px;
-    background: #98c1d9;
+    background-color: #3d5a80;
     border-radius: 10px;
     margin: 20px auto;
     max-width: 750px;
@@ -137,7 +138,14 @@ form > button{
     max-width: 750px; 
 }
 
-.blog-details > button{
+.btn{
+    margin: 0 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn > button{
+    cursor: pointer;
     padding: 10px 20px;
     border-radius: 10px;
     border: 2px solid #3d5a80;
@@ -147,8 +155,91 @@ form > button{
     font-weight: bold;
     margin-top: 20px;
     font-size: 14px;
+
 }
 
 .blog-details > p{
     margin: 20px;
+}
+
+.likes{
+    border: none;
+    margin: 0;
+    padding: 5px;
+    font-size: 16px;
+    background-color: #3d5a80;
+    border-radius: 6px;
+    margin-right: 50px;
+    cursor: pointer;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+}
+
+.likes > small{
+    padding: 3px;
+    color: white;
+    font-size: 16px;
+}
+
+.heart{
+    color: rgb(226, 50, 50);
+}
+
+
+.blogTitle{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blogHeader{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blogComments{
+    max-width: 600px;
+    margin: 25px auto;
+    background-color: #98c1d9;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.author{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.commentLikes{
+    display: flex;
+    height: 24px;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    border-radius: 12px;
+    color: #293241;
+    text-align: center;
+    font-size: 15px;
+    /* font: bold; */
+}
+
+.commentLikes > small{
+    font-size: 14px;
+    padding-left: 5px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.likeslabel{
+    padding-left: 3px;
+}
+
+.comment{
+    text-indent: 25px;
+    margin: 10px 40px;
+    text-align: justify; /* justificar o texto */
 }
