@@ -6,13 +6,17 @@
 }
 
 body{
-    background: #eee;
+    background: #480ca8;
     font-family: "Roboto";
     color: #444;
     max-width: 960px;
     margin: 100px auto;
     padding: 10px;
     /*border: 5px solid black;*/
+}
+
+.all-blogs{
+    color: white;
 }
 
 nav {
@@ -23,7 +27,7 @@ nav {
 nav > a{
     color: white;
     text-decoration: none;
-    background-color: #36cca2;
+    background-color: #4361ee;
     padding: 10px;
     border-radius: 10px;
 }
@@ -59,14 +63,17 @@ textarea{
 }
 
 .post > a {
-    color: #36cca2;
+    color: #4361ee;
 }
 
+.create-new{
+    color: white;
+}
 
 .create-blog{
     margin-top: 20px;
     padding: 20px;
-    background-color: #d4e5ed;
+    background-color: #4895ef;
 }
 
 .blog-details{
@@ -76,10 +83,10 @@ textarea{
 
 }
 
-.blog-details > button{
+.back{
     padding: 10px 20px;
     border-radius: 20px;
-    border: 2px solid #36cca2;
+    border: 2px solid #4361ee;
     background-color: white;
     font-size: 14px;
     margin-top: 20px;   
@@ -87,6 +94,52 @@ textarea{
 
 .blog-details > p {
     margin: 20px;
+}
+
+.likes{
+    background-color:#4361ee;
+    color: white;
+    padding: 5px;
+    margin: 0;
+    font-size: 16px;
+    border-radius: 6px;
+    margin-right: 50px;
+    cursor: pointer;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+}
+
+.likes > small{
+    padding-left: 3px;
+    font-size: 16px;
+}
+
+.btn {
+    margin: 0 150px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .btn > button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: white;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  
+  .back {
+    border: 2px solid #36cca2;
+  }
+  
+  .delete {
+    border: 2px solid red;
+  }
+
+.blogTitle{
+    display: flex;
+    justify-content: space-between;
 }
 
 form{
@@ -99,11 +152,61 @@ form{
 form > button{
     padding: 10px 20px;
     border-radius: 20px;
-    border: 2px solid #36cca2;
+    border: 2px solid #4361ee;
     background-color: white;
     font-size: 14px;
     font-weight: bold;
     display: block;
     position: absolute;
     right: 0;
+}
+
+.blogHeader{
+    display: flex;
+    justify-content: space-between;
+}
+
+.blogTitle{
+    display: flex;
+    justify-content: space-between;
+}
+
+.blogComments{
+    margin: 25px auto;
+    max-width: 600px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.author{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.commentsLikes{
+    display: flex;
+    height: 24px;
+    padding: 10px;
+    background-color: #4361ee;
+    color: white;
+    border-radius: 12px;
+    border: none;
+    text-align: center;
+    align-items: center;
+}
+
+.commentsLike > small{
+    font-size: 14px;
+    padding-left: 3px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.comment{
+    text-indent: 25px;
+    margin: 10px 40px;
+    text-align: justify;
 }

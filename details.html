@@ -9,9 +9,44 @@
 </head>
 <body>
     <div class = "blog-details">
-    <h1></h1>
-        <p></p>
-        <button>Voltar</button>
+        <div class="blogTitle">
+
+            <h1></h1>
+            <button class="likes" id="likesButton"> Likes:
+                <small id="likes"></small>
+            </button>
+
+        </div>
+        <p id="blogBody"></p>
+
+        <div class="btn">
+            <button class="back" id="back">Voltar</button>
+            <button class="delete" id="delete">Delete</button>
+        </div>
+    </div>
+    <div id="comments">
+        <div class="blogComments">
+            <div class="commentBody">
+                <div class="blogHeader">
+                    <!-- author, avatar -->
+                <div class="author">
+                    <img src="rock.png" alt="">
+                    <div>
+                        <p>author:</p>
+                        <h2>Felipe Reggiane</h2>
+                    </div>
+                </div>
+                <!-- Likes -->
+                <button class="commentsLikes" id="likesButtonComment">
+                    Likes: <small >10</small>
+                </button>
+                </div>
+                <!-- body -->
+                <p class="comment">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur cupiditate quam nisi minus facere quae eius? Vero atque vel, numquam architecto mollitia cupiditate ex modi molestiae optio nesciunt dolores temporibus.
+                </p>
+            </div>    
+        </div>
     </div>
     <script src="js/details.js"></script>
 </body>
