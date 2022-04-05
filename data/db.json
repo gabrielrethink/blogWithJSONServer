@@ -2,7 +2,7 @@
   "posts": [
     {
       "id": 1,
-      "likes": 99,
+      "likes": 100,
       "title": "Gabriel Post",
       "body": "Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut ninja wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit ninja lobortis nisl ut aliquip ex ea commodo consequat. Duis ninja autem vel eum iriure dolor in hendrerit in vulputate ninja velit esse molestie consequat, vel illum dolore eu feugiat nulla ninja facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam ninja ipsum liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi ninja non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes ninja demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas ninja est etiam processus dynamicus, qui ninja sequitur mutationem consuetudium lectorum. Mirum ninja est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem ninja ipsum modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in ninja futurum."
     }
@@ -10,7 +10,7 @@
   "comments": [
     {
       "id": 1,
-      "likes": 10,
+      "likes": 14,
       "body": "Esse post é uma merda",
       "author": "Lucas de Paula",
       "postId": 1
@@ -24,10 +24,42 @@
     },
     {
       "id": 3,
-      "likes": 87,
+      "likes": 91,
       "body": "Esse post é uma Fake NEWS",
       "author": "Gabriel Gomes",
       "postId": 1
+    },
+    {
+      "author": "Gabriel Gomes",
+      "body": "Post new Comment",
+      "postId": "1",
+      "likes": 0,
+      "authorImg": "https://ui-avatars.com/api/?name=() => {\n    const author = newComment_form.author.value.split(\" \");\n    console.log(author);\n    if (author.length === 2) {\n      return `${author[0]}+${author[1]}`;\n    }\n    return author[0];\n  }}&rounded=true",
+      "id": 4
+    },
+    {
+      "author": "Gabriel Gomes",
+      "body": "Post New Comment",
+      "postId": "1",
+      "likes": 0,
+      "authorImg": "https://ui-avatars.com/api/?name=Gabriel+Gomes}&rounded=true",
+      "id": 5
+    },
+    {
+      "author": "Gabriel Gomes",
+      "body": "New Post with parseInt",
+      "postId": 1,
+      "likes": 0,
+      "authorImg": "https://ui-avatars.com/api/?name=Gabriel+Gomes}&rounded=true",
+      "id": 6
+    },
+    {
+      "author": "Pedro",
+      "body": "Post com tentativa",
+      "postId": 1,
+      "likes": 0,
+      "authorImg": "https://ui-avatars.com/api/?name=Pedro}&rounded=true",
+      "id": 7
     }
   ]
 }
