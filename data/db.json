@@ -21,6 +21,22 @@
       "author": "Lucas",
       "avatar": "",
       "postId": 1
+    },
+    {
+      "id": 2,
+      "likes": 0,
+      "body": "lorem ipsasdasdasdum",
+      "author": "Lucasasdasd",
+      "avatar": "",
+      "postId": 2
+    },
+    {
+      "id": 3,
+      "likes": 0,
+      "body": "lorem ipsasdasdasdum",
+      "author": "Lucasasdasd",
+      "avatar": "",
+      "postId": 1
     }
   ]
 }
