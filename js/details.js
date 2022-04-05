@@ -8,6 +8,7 @@ const delete_button = document.querySelector(".delete");
 const blog_comments = document.querySelector(".blog-comments");
 const likes_btn = document.querySelector(".likesPost");
 const postLikesNumber = document.getElementById("postsLikeNumber");
+const formHtml_form = document.querySelector("form");
 
 const renderPosts = async () => {
     const url = "http://localhost:3000/posts/" + id;
@@ -35,6 +36,22 @@ const deletePost = () => {
     };
 }
 
+const onClickLikeComment = (commentId) => {
+    try{
+        const url = "http://localhost:3000/comments/" + commentId;
+        const likesNumber = document.getElementById(`comment${commentId}`);
+        fetch(url, {
+            headers: { "Content-Type": "application/json" },
+            method: "PATCH",
+            body: JSON.stringify({
+                likes: parseInt(likesNumber.innerHTML) + 1
+            })
+        });
+    } catch(error){
+        console.error(error);
+    }
+}
+
 const renderComments = async () => {
     const url = "http://localhost:3000/comments";
     const res = await fetch(url).then((response) => response.json());
@@ -52,7 +69,7 @@ const renderComments = async () => {
                     <img src="${comment.image}" />
                     <h2>${comment.author}</h2>
                 </div>
-                <button class="likes">Likes: <small>${comment.likes}</small></button>
+                <button class="likes" onclick="onClickLikeComment(${comment.id})">Likes: <small id="comment${comment.id}">${comment.likes}</small></button>
             </div>
             <p class="comment-body">${comment.body}</p>
         </div>
@@ -77,10 +94,42 @@ const likePost = async () => {
     }
 }
 
+const createComment = async (e) => {
+    e.preventDefault();
+
+    //const nome = formHtml_form.author.value.substr(0, 1);
+    const makeNome = () => {
+        const nome = formHtml_form.author.value.split(" ");
+       
+        if(nome.length === 1){
+            return nome[0];
+        } else {
+            return `${nome[0]}+${nome[1]}`;
+        }
+    }
+
+    const comment = {
+        image: `https://ui-avatars.com/api/?name=${makeNome()}&rounded=true`,
+        body: formHtml_form.body.value,
+        author: formHtml_form.author.value,
+        likes: 0,
+        postId: parseInt(id)
+    };
+
+    const url = "http://localhost:3000/comments/";
+    await fetch(url, { 
+        method: "POST", 
+        body: JSON.stringify(comment),
+        headers: {"Content-Type":"application/json"} 
+    },);
+}
+
 back_button.addEventListener("click", () => window.location.replace("/"));
 
 delete_button.addEventListener("click", () => deletePost());
 
 likes_btn.addEventListener("click", () => likePost());
+
+formHtml_form.addEventListener("submit", createComment);
 
 window.addEventListener("DOMContentLoaded", () => renderPosts(), renderComments());
