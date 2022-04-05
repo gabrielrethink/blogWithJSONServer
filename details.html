@@ -10,12 +10,30 @@
   <body>
     <div class="blog-details">
       <h1></h1>
-      <p></p>
+      <button class="likes" id="likesButton">
+        Likes: <small id="likes"> </small>
+      </button>
+      <p> id="blogBody </p>
       <div class="btn">
         <button id="back" class="back">Voltar</button>
         <button id="delete" class="delete">Delete</button>
       </div>
     </div>
+    <div id="comments">
+      <div class="newComment">
+        <form>
+          <label for="author">Author</label>
+          <input
+            type="text"
+            name="author"
+            placeholder="Comment Author"
+            required
+          />
+          <label for="body">Comment</label>
+          <textarea name="body" placeholder="Comment Body" required></textarea>
+          <button>Enviar Comentario</button>
+        </form>
+      </div>
     <script src="js/details.js"></script>
   </body>
 </html>

@@ -6,7 +6,7 @@
 }
 
 body {
-  background: #eee;
+  background: #D6FFF5;
   font-family: "Roboto";
   color: #444;
   max-width: 960px;
@@ -15,6 +15,7 @@ body {
 }
 
 nav {
+  margin: 10px 150px;
   display: flex;
   justify-content: space-between;
 }
@@ -85,14 +86,14 @@ form > button {
   border-radius: 15px;
   background: white;
 }
-.blog-details > button {
+/* .blog-details > button {
   padding: 10px 20px;
   border-radius: 20px;
   border: 2px solid #36cca2;
   background-color: white;
   font-size: 14px;
   margin-top: 20px;
-}
+} */
 
 .blog-details > p {
   margin: 20px;
@@ -110,4 +111,98 @@ form > button {
   background-color: white;
   font-size: 14px;
   margin-top: 20px;
+}
+
+.back {
+  border: 2px solid #36cca2;
+}
+
+.delete {
+  border: 2px solid red;
+}
+
+.likes {
+  border: none;
+  font-size: 16px;
+  background: #36cca2;
+  color: white;
+  padding: 5px;
+  border-radius: 6px;
+  margin-right: 50px;
+  cursor: pointer;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+}
+
+.likes > small {
+  padding-left: 3px;
+  font-size: 16px;
+}
+
+.blogHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blogComments {
+  margin: 25px auto;
+  max-width: 600px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+}
+
+.commentLikes {
+  font-size: 14px;
+  display: flex;
+  height: 24px;
+  padding: 10px;
+  background: #36cca2;
+  color: white;
+  border-radius: 12px;
+  border: none;
+  text-align: center;
+  align-items: center;
+}
+
+.commentLikes > small {
+  font-size: 14px;
+  padding-left: 3px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.comment {
+  text-indent: 25px;
+  margin: 10px 40px;
+  text-align: justify;
+}
+
+.newComment > form > input {
+  display: block;
+  padding: 8px;
+  margin-top: 10px;
+  max-width: 400px;
+}
+.newComment > form > textarea {
+  display: block;
+  padding: 8px;
+  margin-top: 10px;
+  max-width: 550px;
+  min-height: 0;
+}
+
+.newComment {
+  margin: 25px auto 10px auto;
+  max-width: 600px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
 }
