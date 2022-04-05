@@ -1,35 +1,33 @@
 // javascript for details.html
-const id = new URLSearchParams(window.location.search).get('id');
+const idPost = new URLSearchParams(window.location.search).get('id');
 const container = document.querySelector('.details');
 const deleteBtn = document.querySelector('.delete');
 const backBtn = document.querySelector('.back');
 const blog_comments = document.querySelector(".blog-comments");
 const likesBtn = document.getElementById('likesBtn');
 const likesNumber = document.getElementById('postLikes');
+const postTitle = document.getElementById('postTitle');
+const postBody = document.getElementById('postBody');
+const postLikesBtn = document.getElementById('postLikesBtn');
+
+const commentLikes_Btn = document.querySelectorAll(".commentLikes");
 
 const renderDetails = async () => {
-    const res = await fetch('http://localhost:3000/posts/' + id);
+    const res = await fetch('http://localhost:3000/posts/' + idPost);
     const post = await res.json();
-    
-
-    
-    const template = `
-        <h1>${post.title}</h1>
-        <p>${post.body}</p>
-        <button id="likesBtn">likes : <small id="postLikes">${post.likes}</small></button>
-    `
-    container.innerHTML = template;
+    postTitle.innerHTML = post.title;
+    postBody.innerHTML = post.body;
+    likesNumber.innerHTML = post.likes;
 }
 
 const renderComments = async () => {
     const url = "http://localhost:3000/comments/";
     const res = await fetch(url).then((response) => response.json());
     const comments = res.filter(comment => {
-        console.log(comment.postID, id);
-        return comment.postID === parseInt(id);
+        console.log(comment.postID, idPost);
+        return comment.postID === parseInt(idPost);
     });
     console.log(comments);
-    //const commentsFilter = comments.filter();
 
     let template = "";
     console.log(comments);
@@ -41,17 +39,23 @@ const renderComments = async () => {
                 <img src="${comment.image}" />
                 <h2>${comment.author}</h2>
             </div>
-            <button class="likes">Likes: <small>${comment.likes}</small></button>
+            <button class="commentLikes" onClick="onClickLikeButton(${comment.id})">Likes: <small id="comment${comment.id}">${comment.likes}</small></button>
         </div>
         <p class="comment-body">${comment.body}</p>
-    </div>`;
+    </div>
+    `
     });
 
     blog_comments.innerHTML = template;
 }
 
+const onClickLikeButton = (idComment) => {
+    const like_btn = document.getElementById(`comment${idComment}`);
+    like_btn.innerHTML = parseInt(like_btn.innerHTML) + 1;
+};
+
 const likePost = async () => {
-    const url = "http://localhost:3000/posts/" + id;
+    const url = "http://localhost:3000/posts/" + idPost;
     await fetch(url, {
        method: 'PATCH',
        body: JSON.stringify({
@@ -62,18 +66,22 @@ const likePost = async () => {
     console.log(likesNumber.innerHTML);
 }
 
+
+console.log(commentLikes_Btn);
+
 deleteBtn.addEventListener('click', async (e) => {
-    const res = await fetch('http://localhost:3000/posts/' + id, {
+    const res = await fetch('http://localhost:3000/posts/' + idPost, {
         method: 'DELETE'
     })
     window.location.replace('/index.html');
 })
 
+
 backBtn.addEventListener('click', async (e) => {
     window.location.replace('/');
 })
 
-likesBtn.addEventListener('click', async (e) => 
+postLikesBtn.addEventListener('click', async (e) => 
     likePost()
 )
 

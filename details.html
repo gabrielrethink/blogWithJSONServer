@@ -9,10 +9,21 @@
 <body>
     
     <div class="details">
-        <button id="likesBtn">likes : <small id="postLikes">0</small></button>
+        <h1 id="postTitle"></h1>
+        <p id="postBody"></p>
+        <button id="postLikesBtn">likes : <small id="postLikes">0</small></button>
     </div>
     <button class="delete">delete</button>
     <button class="back">back</button>
+
+    <div>
+        <div id ="comments"></div>
+        <div id="newComment">
+            <form>
+                <label for="author">author</label>
+            </form>
+        </div>
+    </div>
 
     <div class="blog-comments">
         <div class="comment">
@@ -21,7 +32,7 @@
                     <img src="images/person-circle.svg" />
                     <h2>Carol</h2>
                 </div>
-                <button class="likes">Likes: <small>0</small></button>
+                <button class="likes" id="likesBtn">Likes:  <small>0</small></button>
             </div>
             <p class="comment-body">aaaaaaaaaaaa</p>
         </div>

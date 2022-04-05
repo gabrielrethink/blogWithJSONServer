@@ -31,21 +31,6 @@ nav a {
     border-radius: 10px;
 }
 
-form {
-    max-width: 500px;
-}
-
-form > button {
-    padding: 10px 20px;
-    border-radius: 20px;
-    border: 2px solid #a5adff;
-    background-color: white;
-    font-size: 14px;
-    display: block;
-    position: absolute;
-    right: 0;
-}
-
 input, textarea {
     display: block;
     margin: 16px 0;
@@ -80,42 +65,25 @@ textarea {
     background-color: white;
 }
 
-.comment {
-    background-color: white;
-    margin: 30px;
-    padding: 15px;
+form {
+    max-width: 500px;
+}
+
+form > button {
+    padding: 10px 20px;
     border-radius: 20px;
-}
-
-.comment-header {
-    display: flex;
-    justify-content: space-between;
-    margin: 10px 50px;
-}
-
-.author {
-    display: flex;
-}
-
-.author > img {
-    margin-right: 10px;
-    height: 30px;
-    width: 30px;
-}
-
-.likes {
-    height: 30px;
-    padding: 0px 10px;
-    border-radius: 15px;
-    background-color: white;
     border: 2px solid #a5adff;
-    color: #a5adff;
+    background-color: white;
+    font-size: 14px;
+    display: block;
+    position: absolute;
+    right: 0;
 }
 
-.comment-body {
-    margin: 0px 150px;
-    margin-top: 25px; 
-    text-align: justify;
+.blog-details {
+    padding: 20px;
+    border-radius: 15px;
+    background: white;
 }
 
 .btn {
@@ -131,3 +99,70 @@ textarea {
     background-color: white;
     margin-top: 20px;
 }
+
+.blog-details > p {
+    margin: 20px;
+}
+
+.likes {
+    border: none;
+    font-size: 16px;
+    background-color: #a5adff;
+    color: white;
+    padding: 5px;
+    border-radius: 6px;
+    margin-right: 50px;
+    cursor: pointer;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+}
+
+.likes > small {
+    padding-left: 3px;
+    font-size: 16px;
+}
+
+.blogHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blogComments {
+    margin: 25px auto;
+    max-width: 600px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+}
+
+.comment {
+    background-color: white;
+    margin: 30px;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.comment-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 50px;
+}
+
+.author > img {
+    margin-right: 10px;
+    height: 30px;
+    width: 30px;
+}
+
+.comment-body {
+    margin: 0px 150px;
+    margin-top: 25px; 
+    text-align: justify;
+}
+
