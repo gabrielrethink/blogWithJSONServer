@@ -223,6 +223,7 @@ form > button{
     color: #293241;
     text-align: center;
     font-size: 15px;
+    cursor: pointer;
     /* font: bold; */
 }
 
@@ -242,4 +243,19 @@ form > button{
     text-indent: 25px;
     margin: 10px 40px;
     text-align: justify; /* justificar o texto */
+}
+
+#buttonComment{
+    /* background-color: red; */
+    display: flex;
+    height: 24px;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    border-radius: 12px;
+    color: #293241;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    /* font: bold; */
 }
