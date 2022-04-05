@@ -22,26 +22,17 @@
             <button id="button">Voltar</button>
             <button id="delete" class="delete">Delete</button>
         </div>
-        <!-- <button class="console">Console</button> -->
     </div>
     <div id="comments">
-        <!-- <div class="blogComments">
-            <div class="blogHeader">
-                <div class="author">
-                    <img src="images/paper.png" alt="">
-                    <div>
-                        <p>author:</p>
-                        <h2>Lucas</h2>
-                    </div>
-                </div>
-                <button class="commentLikes" id = likesBtnComment>Likes: 
-                    <small id="commentLikes"> 20</small>
-                </button>
-            </div>
-            <p class="comment">
-            admkanfmauindaksjndkndkankj kjadn askjndandksan
-            </p>
-        </div> -->
+    </div>
+    <div class="newComment">
+        <form id="commentForm">
+            <label for="author">Author</label>
+            <input type="text" name = "author" placeholder="Comment Author" required/>
+            <label for="body">Comment</label>
+            <textarea name="body" placeholder="Comment Body" required></textarea>
+            <button name="button">Enviar Comentario</button>
+        </form>
     </div>
     <script src="js/details.js"></script>
 </body>
