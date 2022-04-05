@@ -7,7 +7,7 @@ const blogLikes_small = document.getElementById("likes");
 const delete_btn = document.getElementById("delete");
 
 // const console_button = document.getElementById("console");
-const coments_div = document.getElementById("comments");
+const comments_div = document.getElementById("comments");
 
 const renderPosts = async () => {
     const url = "http://localhost:3000/posts/" + id;
@@ -53,21 +53,21 @@ const renderComments = async () => {
   postComments.forEach(
     (comment) =>
       (template += `
-  <div class="blogComments">
-        <div class="blogHeader">
-          <div class="author">
-            <img src="rock.png" alt="" />
-            <div>
-              <p>author:</p>
-              <h2>${comment.author}</h2>
+      <div class="blogComments">
+            <div class="blogHeader">
+              <div class="author">
+                <img src="rock.png" alt="" />
+                <div>
+                  <p>author:</p>
+                  <h2>${comment.author}</h2>
+                </div>
+              </div>
+              <button class="commentLikes">Likes : <small> ${comment.likes}</small></button>
             </div>
-          </div>
-          <button class="commentLikes">Likes : <small> ${comment.likes}</small></button>
-        </div>
-        <p class="comment">
-          ${comment.body}
-        </p>
-      </div>`)
+            <p class="comment">
+              ${comment.body}
+            </p>
+          </div>`)
   );
 
   comments_div.innerHTML = template;
@@ -77,4 +77,4 @@ const renderComments = async () => {
 delete_btn.addEventListener('click', () => deletePost());
 blogLikes_small.addEventListener('click', () => likeBlog());
 back_button.addEventListener('click', () => window.location.replace("/"));
-window.addEventListener("DOMContentLoaded", () => renderPosts());
+window.addEventListener("DOMContentLoaded", () => renderPosts(), renderComments());
