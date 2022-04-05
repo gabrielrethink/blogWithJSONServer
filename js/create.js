@@ -3,8 +3,8 @@ const formHtml_form = document.querySelector("form")
 const createPost = async (e) =>{
     e.preventDefault();
     const post = {
-        title: formHtml_form.title.value,
-        body: formHtml_form.body.value, 
+        title: commentForm_form.title.value,
+        body: commentForm_form.body.value, 
         likes: 0,
     };
     const url = "http://localhost:3000/posts";
@@ -17,4 +17,4 @@ const createPost = async (e) =>{
     window.location.replace("/");
 };
 
-formHtml_form.addEventListener("submit", createPost);
+commentForm_form.addEventListener("submit", createPost);

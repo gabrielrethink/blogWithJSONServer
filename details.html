@@ -38,7 +38,7 @@
                 </div>
                 <!-- Likes -->
                 <button class="commentsLikes" id="likesButtonComment">
-                    Likes: <small >10</small>
+                    Likes: <small id="commentsLikes">10</small>
                 </button>
                 </div>
                 <!-- body -->
@@ -47,6 +47,21 @@
                 </p>
             </div>    
         </div>
+    </div>
+    <div class="newComment">
+        <form>
+            <label for="author">author</label>
+            <input 
+                type="text" 
+                name="author" 
+                required
+                placeholder="Comment Author"
+            />
+            <label for="body">Comment</label>
+            <textarea name="body" required placeholder="Comment Body"></textarea>
+            <button>Enviar Comentario</button>
+            
+        </form>
     </div>
     <script src="js/details.js"></script>
 </body>

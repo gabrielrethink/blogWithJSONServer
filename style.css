@@ -210,3 +210,27 @@ form > button{
     margin: 10px 40px;
     text-align: justify;
 }
+
+.newComment > form > input{
+    display: block;
+    padding: 8px;
+    margin-top: 10px;
+    max-width: 550px;
+    min-height: 0;
+}
+
+.newComment > form > textarea{
+    display: block;
+    padding: 8px;
+    margin-top: 10px;
+    max-width: 550px;
+    min-height: 0;
+}
+
+.newComment{
+    margin: 25px auto 10px auto;
+    max-width: 600px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
