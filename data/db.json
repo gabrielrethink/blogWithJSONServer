@@ -3,32 +3,77 @@
     {
       "id": 1,
       "likes": 58,
-      "title": "Blog",
-      "body": "Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut ninja wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit ninja lobortis nisl ut aliquip ex ea commodo consequat. Duis ninja autem vel eum iriure dolor in hendrerit in vulputate ninja velit esse molestie consequat, vel illum dolore eu feugiat nulla ninja facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam ninja ipsum liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi ninja non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes ninja demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas ninja est etiam processus dynamicus, qui ninja sequitur mutationem consuetudium lectorum. Mirum ninja est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem ninja ipsum modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in ninja futurum."
+      "title": "Luigi's Mansion 3 - Review",
+      "body": "Luigi's Mansion 3 é o auge do personagem; uma aventura cativante, repleta de vilões memoráveis. Apesar de algumas mecânicas repetitivas, o game é envelopado por um visual rico em detalhes e cenários diversificados, o que contribui para a experiência não ser enjoativa. Há muitos mistérios e particularidades no The Last Resort que fazem valer a pena mais uma visita aos corredores deste hotel assombrado..."
     },
     {
-      "id": 2,
-      "likes": 45,
       "title": "Mario Kart 8 Deluxe review",
-      "body": "Simplesmente, Mario Kart 8 Deluxe é a melhor versão de todos os tempos. Se você possui um Nintendo Switch, ficaria louco de não comprar uma cópia."
+      "body": "Primeiro, Deluxe inclui todo o conteúdo para download de Mario Kart 8, que traz 16 novas faixas, incluindo as temáticas Zelda e F-Zero, um monte de novos personagens jogáveis (são 42 no total), peças de karts e kart, além das 200cc modo que foi adicionado ao Mario Kart 8 como uma atualização. Além de tudo isso, o modo Batalha foi completamente - e muito efetivamente - renovado. Mas o que realmente surpreende é que foram feitos alguns ajustes e acréscimos pequenos, mas significativos, que afetam a jogabilidade principal.",
+      "likes": 5,
+      "id": 2
     }
   ],
   "comments": [
     {
       "id": 1,
-      "likes": 24,
-      "body": "UUUUUUUUUUUUU UUUUUUUUUUUUUUHHHHH HHHHHHHHHHHHHHHHHH HHHHHH HHHHHHH HHH",
-      "author": "Carol",
-      "image": "images/person-circle.svg",
-      "postID": 2
+      "likes": 42,
+      "body": "Concordo com tudo",
+      "author": "Carolina Valeriano",
+      "postId": 1
     },
     {
       "id": 2,
-      "likes": 47,
-      "body": "AAAAAAAAAAAAAA UUUUUUUUUUUUUU JJJJJ GGGGGGG SSSS",
-      "author": "Manu",
-      "image": "images/alarm.svg",
-      "postID": 1
+      "likes": 25,
+      "body": "Queria jogar",
+      "author": "Marco Tulio",
+      "postId": 2
+    },
+    {
+      "id": 3,
+      "likes": 15,
+      "body": "Gostei muito do jogo",
+      "author": "Vinicius Oliveira",
+      "postId": 1
+    },
+    {
+      "author": "Carolina Valeriano",
+      "body": "Post new Comment",
+      "postId": "1",
+      "likes": 0,
+      "authorImg": "https://ui-avatars.com/api/?name=() => {\n    const author = newComment_form.author.value.split(\" \");\n    console.log(author);\n    if (author.length === 2) {\n      return `${author[0]}+${author[1]}`;\n    }\n    return author[0];\n  }}&rounded=true",
+      "id": 4
+    },
+    {
+      "author": "Carolina Valeriano",
+      "body": "Post New Comment",
+      "postId": "1",
+      "likes": 0,
+      "authorImg": "https://ui-avatars.com/api/?name=Carolina+Valeriano}&rounded=true",
+      "id": 5
+    },
+    {
+      "author": "Carolina Valeriano",
+      "body": "O jogo é mesmo muito legal",
+      "postId": 1,
+      "likes": 1,
+      "authorImg": "https://ui-avatars.com/api/?name=Carolina+Valeriano}&rounded=true",
+      "id": 6
+    },
+    {
+      "author": "Bento",
+      "body": "Eu também gostei muito",
+      "postId": 1,
+      "likes": 0,
+      "authorImg": "https://ui-avatars.com/api/?name=Bento}&rounded=true",
+      "id": 7
+    },
+    {
+      "author": "Gabrielle Souza",
+      "body": "Joguei e achei incrível ",
+      "postId": 2,
+      "likes": 2,
+      "authorImg": "https://ui-avatars.com/api/?name=Gabrielle+Souza&rounded=true",
+      "id": 8
     }
   ]
 }

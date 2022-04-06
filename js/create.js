@@ -1,22 +1,20 @@
-// javascript for create.html
-const form = document.querySelector('form');
+const formHtml_form = document.querySelector("form");
 
 const createPost = async (e) => {
-    e.preventDefault();
+  e.preventDefault();
+  const post = {
+    title: formHtml_form.title.value,
+    body: formHtml_form.body.value,
+    likes: 0,
+  };
+  const url = "http://localhost:3000/posts/";
+  await fetch(url, {
+    method: "POST",
+    body: JSON.stringify(post),
+    headers: { "Content-Type": "application/json" },
+  });
 
-    const doc = {
-        title: form.title.value,
-        body: form.body.value,
-        likes: 0
-    }
+  window.location.replace("/");
+};
 
-    await fetch('http://localhost:3000/posts', {
-        method: 'POST',
-        body: JSON.stringify(doc),
-        headers: { 'Content-Type': 'application/json'}
-    });
-
-    window.location.replace('/index.html');
-}
-
-form.addEventListener('submit', createPost);
+formHtml_form.addEventListener("submit", createPost);
