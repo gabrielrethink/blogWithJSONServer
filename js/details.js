@@ -109,7 +109,7 @@ const creatComment = async (e) => {
 function makeAvatar () { 
   const text = "https://ui-avatars.com/api/?name="+formHtml_form.author.value.replace(" ", "+");
   console.log(text);
-  return text;
+  return text; 
 };
 
 formHtml_form.addEventListener("submit", (e) => creatComment(e));
