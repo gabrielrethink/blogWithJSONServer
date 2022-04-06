@@ -21,11 +21,12 @@
   ],
   "comments": [
     {
-      "id": 1,
-      "likes": 17,
-      "body": "Esse post é uma merda",
-      "author": "Anônimo S",
-      "postId": 1
+      "author": "Gabs Melo",
+      "body": "ertertery",
+      "postId": 1,
+      "likes": 0,
+      "authorImg": "https://ui-avatars.com/api/?name=Gabs+Melo&rounded=true",
+      "id": 2
     }
   ]
 }

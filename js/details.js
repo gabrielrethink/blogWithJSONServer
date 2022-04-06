@@ -1,4 +1,4 @@
-const id = new URLSearchParams(window.location.search).get("id");
+const postsId = new URLSearchParams(window.location.search).get("id");
 const blogTitle_h1 = document.querySelector("h1");
 const blogBody_p = document.querySelector("p");
 const back_button = document.getElementById("back");
@@ -11,7 +11,7 @@ const newComment_form = document.querySelector("form");
 
 
 const renderPosts = async () => {
-  const url = "http://localhost:3000/posts/" + id;
+  const url = "http://localhost:3000/posts/" + postsId;
   const res = await fetch(url).then((response) => response.json());
 
   blogTitle_h1.innerHTML = res.title;
@@ -20,7 +20,7 @@ const renderPosts = async () => {
 };
 
 const likeBlog = async () => {
-  const url = "http://localhost:3000/posts/" + id;
+  const url = "http://localhost:3000/posts/" + postsId;
 
   await fetch(url, {
     method: "PATCH",
@@ -33,7 +33,7 @@ const likeBlog = async () => {
 
 
 const deletePost = () => {
-  const url ="http://localhost:3000/posts/" +id;
+  const url ="http://localhost:3000/posts/" +postsId;
   const validation = confirm("Deseja deletar o post?");
 
   if (validation) {
@@ -45,7 +45,7 @@ const deletePost = () => {
 const renderComments = async () => {
   const url = "http://localhost:3000/comments";
   const res = await fetch(url).then((response) => response.json());
-  const postComments = res.filter((item) => item.postId === parseInt(id));
+  const postComments = res.filter((item) => item.postId === parseInt(postsId));
 
   let template = "";
   
@@ -55,7 +55,7 @@ const renderComments = async () => {
         (template += `<div class="blogComments">
           <div class="blogHeader">
             <div class="author">
-              <img src="${comment.authorImg ?? "rock.png"}"/>
+              <img src="${comment.authorImg ?? ""}"/>
               <div>
                 <p>author:</p>
                 <h2>${comment.author}</h2>
@@ -102,7 +102,7 @@ const renderComments = async () => {
     const comment = {
       author: newComment_form.author.value,
       body: newComment_form.body.value,
-      postId: parseInt(idPosts),
+      postId: parseInt(postsId),
       likes: 0,
       authorImg: `https://ui-avatars.com/api/?name=${makeImg()}&rounded=true`,
     };
