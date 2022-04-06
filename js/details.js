@@ -107,7 +107,7 @@ const creatComment = async (e) => {
   });
 };
 function makeAvatar () { 
-  const text = formHtml_form.author.replace(" ", "+");
+  const text = "https://ui-avatars.com/api/?name="+formHtml_form.author.value.replace(" ", "+");
   console.log(text);
   return text;
 };

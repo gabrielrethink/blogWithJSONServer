@@ -72,11 +72,19 @@
     },
     {
       "likes": 0,
-      "body": "sds",
+      "body": "asdas",
       "postId": 1,
-      "avatar": "https://ui-avatars.com/api/?name=function makeAvatar () { \r\n  const text = formHtml_form.author.replace(\" \", \"+\");\r\n  console.log(text);\r\n  return text;\r\n}&rounded=true",
-      "author": "As As",
+      "avatar": "https://ui-avatars.com/api/?name=asd+asda",
+      "author": "asd asda",
       "id": 14
+    },
+    {
+      "likes": 0,
+      "body": "aaaaaa",
+      "postId": 1,
+      "avatar": "https://ui-avatars.com/api/?name=FAFAFA+FAFAFA",
+      "author": "FAFAFA FAFAFA",
+      "id": 15
     }
   ]
 }
