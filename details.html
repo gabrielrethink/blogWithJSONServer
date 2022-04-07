@@ -12,10 +12,27 @@
       <h1></h1>
       <p></p>
       <div class="btn">
-      <button id="back">Voltar</button>
-      <button id="delete">Deletar</button>
+        <button id="back">Back</button>
+        <button id="delete">Delete</button>
+      </div>
     </div>
+    <div class="allComments"></div>
+
+    <div class="newComment">
+      <form>
+        <label for="author">Author</label>
+        <input
+          type="text"
+          name="author"
+          placeholder="Comment Author"
+          required
+        />
+        <label for="body">Comment</label>
+        <textarea name="body" placeholder="Comment Body" required></textarea>
+        <button>Send Comment</button>
+      </form>
     </div>
+
     <script src="js/details.js"></script>
   </body>
 </html>

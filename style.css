@@ -7,9 +7,9 @@
 
 body {
     background: white;
-    font-family: "Roboto" ;
+    font-family: "Roboto";
     max-width: 960px;
-    margin: 100px auto;
+    margin: 50px auto;
     padding: 10px;
 }
 
@@ -19,12 +19,12 @@ nav {
     margin: 10px 90px;
 }
 
-nav > a{
+nav>a {
     color: white;
     text-decoration: none;
     background-color: #ecc3ec;
     padding: 10px;
-    border-radius:  10px;
+    border-radius: 10px;
 }
 
 form {
@@ -36,32 +36,32 @@ textarea {
     display: block;
     margin: 16px 0;
     padding: 6px 10px;
-    width:  100%;
+    width: 100%;
     border: 1px solid #ddd;
     font-family: "Roboto";
 }
 
-textarea{
+textarea {
     min-height: 200px;
 }
 
-.post{
+.post {
     max-width: 750px;
     padding: 16px;
     margin: 20px auto;
-    background: #ecc3ec;    
+    background: #ecc3ec;
     border-radius: 10px;
 }
 
-.post > h2 {
+.post>h2 {
     margin: 0;
 }
 
-.post > p {
+.post>p {
     margin: 10px;
 }
 
-.post > a {
+.post>a {
     color: white;
 }
 
@@ -76,16 +76,16 @@ textarea{
     background: #ecc3ec;
 }
 
-.blog-details  > button {
+.blog-details>button {
     padding: 10px 20px;
     border-radius: 20px;
-    border:  2px solid white;
+    border: 2px solid white;
     font-size: 14px;
     background-color: white;
     margin-top: 20px;
 }
 
-.blog-details  > p {
+.blog-details>p {
     margin: 20px;
 }
 
@@ -96,10 +96,10 @@ form {
     margin-bottom: 50px;
 }
 
-form > button {
+form>button {
     padding: 10px 20px;
     border-radius: 20px;
-    border:  2px solid white;
+    border: 2px solid white;
     background-color: white;
     font-size: 14px;
     display: block;
@@ -108,22 +108,84 @@ form > button {
     word-spacing: 0.5px;
 }
 
-.btn > button {
+.btn>button {
     padding: 10px 20px;
     border-radius: 20px;
-    border:  2px solid white;
+    border: 2px solid white;
     font-size: 14px;
     background-color: white;
     margin-top: 20px;
 }
 
-.btn{
+.btn {
     display: flex;
     justify-content: space-between;
-    margin: 0px 30px ;
+    margin: 0px 30px;
 }
 
 #delete {
     color: red;
 
+}
+
+.comment {
+    padding: 20px;
+    border-radius: 15px;
+    background: #ecc3ec;
+    margin: 20px 0px;
+
+}
+
+.commentHeader {
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+
+}
+
+.commentBody {
+    padding: 20px;
+    border-radius: 15px;
+    display: block;
+}
+
+.newComment {
+    border: 2px solid #ecc3ec;
+    background-color: #ecc3ec;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px 0px;
+}
+
+.newComment>form {
+    max-width: 650px;
+}
+
+.author {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: stretch;
+}
+
+.likes {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 2px solid white;
+    font-size: 14px;
+    background-color: white;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.likes>div {
+    padding-left: 2px;
 }
